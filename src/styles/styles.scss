@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "mixins";
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+body, html {
+  font-family: $font-family-body;
+  margin: 0;
+}
+
+.disabled {
+  opacity: 0.8;
+  pointer-events: none;
+  cursor: not-allowed;
+}
