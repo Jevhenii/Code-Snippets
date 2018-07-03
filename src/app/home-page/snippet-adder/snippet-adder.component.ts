@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./snippet-adder.component.scss']
 })
 export class SnippetAdderComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit() {
   }
+
+  addSnippet = () => {}
+
 
 }
