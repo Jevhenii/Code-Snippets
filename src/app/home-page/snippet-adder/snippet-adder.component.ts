@@ -11,6 +11,4 @@ export class SnippetAdderComponent implements OnInit {
   }
 
   addSnippet = () => {}
-
-
 }

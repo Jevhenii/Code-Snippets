@@ -1,4 +1,4 @@
-export enum languages {
+export enum Languages {
   typescript = 'TypeScript',
   css = 'CSS'
 }

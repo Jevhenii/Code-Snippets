@@ -3,11 +3,16 @@
     <app-language-bar></app-language-bar>
   </div>
 </div>
-<div class="container">
-  <div class="row">
+<div class="card-container"
+     fxLayoutAlign.xs="center center"
+     fxLayoutAlign="start center"
+     fxLayoutGap.xs="1em"
+     fxLayoutGap="2em"
+     fxLayout="row wrap">
+  <div>
     <app-snippet-adder></app-snippet-adder>
   </div>
-  <div class="row">
+  <div *ngFor="let snippet of snippets">
     <app-snippet-card></app-snippet-card>
   </div>
 </div>
