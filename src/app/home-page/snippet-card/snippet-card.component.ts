@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Snippet} from '../models/snippet';
 
 @Component({
   selector: 'app-snippet-card',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./snippet-card.component.scss']
 })
 export class SnippetCardComponent implements OnInit {
+  @Input() snippet: Snippet;
+
+  showModal = false;
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  showDetails = () => this.showModal = true;
 
 }
